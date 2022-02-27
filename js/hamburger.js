@@ -1,0 +1,16 @@
+hamburger = document.querySelector('.hamburger')
+member_tag = document.getElementById('member-tag')
+members = document.querySelector('.members')
+hamburger_con = document.querySelector('.hamburger_con')
+sidebar = document.querySelector('.sidebar')
+workspace = document.querySelector('.workspace')
+
+hamburger.addEventListener('click', () => {
+    member_tag.classList.toggle('v-hidden')
+    members.classList.toggle('v-hidden')
+    hamburger_con.classList.toggle('b-b-hidden')
+    hamburger_con.classList.toggle('flex-end-hamburger')
+    sidebar.classList.toggle('sidebar-w-resize')
+    workspace.classList.toggle('workspace-width-hamburger')
+    msginp.classList.toggle('send-input-width-hamburger')
+})

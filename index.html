@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megram- A Realtime Chat App</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/Img/chat_icon.png" />
+      </div>
+      <div class="tag">Megram&trade;</div>
+      <ul id="navbar">
+        <li><a href="#"> Chats</a></li>
+        <li><a href="#"> Theme</a></li>
+        <li><a href="#"> Settings</a></li>
+        <li><a href="#"> More</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="sidebar ">
+        <div class="hamburger_con ">
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <h1 id="member-tag" class="">Members</h1>
+        </div>
+        <div class="members "></div>
+      </div>
+      <div class="workspace">
+        <div class="msgarea">
+        </div>
+        <form action="#" id="send">
+          <input
+            type="text"
+            name="msginp"
+            id="msginp"
+            placeholder="Enter your message here.."
+          />
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script defer src="/js/hamburger.js"></script>
+</html>
